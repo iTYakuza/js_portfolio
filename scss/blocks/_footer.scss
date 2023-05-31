@@ -1,0 +1,31 @@
+.footer {
+   background-color: $first-color;
+   padding: 60px 0 50px;
+   margin-top: auto;
+
+   @include mediaTablet {
+      padding: 40px 0 30px;
+   }
+}
+
+.social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 30px;
+   @include mediaTablet {
+      column-gap: 20px;
+   }
+}
+.social__item {
+   margin-bottom: 27px;
+
+   @include mediaTablet {
+      width: 28px;
+   }
+}
+
+.copyright {
+   color: #fff;
+   text-align: center;
+}

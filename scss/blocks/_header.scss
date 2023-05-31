@@ -1,0 +1,70 @@
+.header {
+   background-color: $bg-color;
+   background-image: url("./../img/bg-img.png");
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position: center center;
+   padding: 40px 0;
+   min-height: 695px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   @include mediaTablet {
+      min-height: unset;
+   }
+   &__wrapper {
+      max-width: 660px;
+      padding: 0 15px;
+   }
+   &__title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      @include mediaTablet {
+         font-size: 30px;
+      }
+      & strong {
+         font-size: 60px;
+         font-weight: 700;
+         @include mediaTablet {
+            font-size: 40px;
+         }
+      }
+      & em {
+         font-style: normal;
+         color: $purple;
+      }
+   }
+   &__text {
+      font-size: 18px;
+      line-height: 1.333;
+      margin-bottom: 40px;
+      & p + p {
+         margin-top: 1em;
+      }
+   }
+}
+
+.btn {
+   display: inline-block;
+   height: 48px;
+   padding: 12px 28px;
+   border-radius: 5px;
+   background-color: $purple;
+   letter-spacing: 0.15px;
+   font-size: 16px;
+   font-weight: 500;
+   transition: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+   opacity: 0.8;
+}
+
+.btn:active {
+   position: relative;
+   top: 1px;
+}
